@@ -1,5 +1,5 @@
 #tag Class
-Protected Class CaretBlinker
+ Attributes ( InternalItem = True ) Class CaretBlinker
 Inherits timer
 	#tag Event
 		Sub Action()

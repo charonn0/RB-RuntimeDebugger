@@ -1,5 +1,5 @@
 #tag Class
-Class LineHighlighter
+ Attributes ( InternalItem = True ) Class LineHighlighter
 Inherits Thread
 	#tag Event
 		Sub Run()

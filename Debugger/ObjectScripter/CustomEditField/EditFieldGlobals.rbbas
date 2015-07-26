@@ -1,5 +1,5 @@
 #tag Module
-Protected Module EditFieldGlobals
+ Attributes ( InternalItem = True ) Module EditFieldGlobals
 	#tag Method, Flags = &h0
 		Function DarkerColor(extends forColor as color, offset as integer) As color
 		  //get a darker color for the given color.

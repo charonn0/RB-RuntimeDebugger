@@ -1,5 +1,5 @@
 #tag Module
-Protected Module DragImage
+ Attributes ( InternalItem = True ) Module DragImage
 	#tag Method, Flags = &h21
 		Private Function NewCGImage(p as Picture) As Ptr
 		  #if targetMacOS

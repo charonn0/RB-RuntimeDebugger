@@ -1,5 +1,5 @@
 #tag Interface
-Protected Interface IBufferStorage
+ Attributes ( InternalItem = True ) Interface IBufferStorage
 	#tag Method, Flags = &h0
 		Function ByteAt(offset as Integer) As Integer
 		  

@@ -1,5 +1,5 @@
 #tag Class
-Protected Class AutocompleteOptions
+ Attributes ( InternalItem = True ) Class AutocompleteOptions
 	#tag Property, Flags = &h0
 		CurrentPathComponent As string
 	#tag EndProperty

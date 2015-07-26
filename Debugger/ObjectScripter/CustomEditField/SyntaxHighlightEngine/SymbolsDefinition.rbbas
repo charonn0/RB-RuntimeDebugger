@@ -1,5 +1,5 @@
 #tag Class
-Protected Class SymbolsDefinition
+ Attributes ( InternalItem = True ) Class SymbolsDefinition
 	#tag Method, Flags = &h0
 		Sub appendToXMLNode(parent as xmlNode, depth as integer = 2)
 		  //appends this context to the parent xml node

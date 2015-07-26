@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Info
+ Attributes ( InternalItem = True ) Module Info
 	#tag Note, Name = 1. Info
 		Note: The code is now hosted and updated here:
 		

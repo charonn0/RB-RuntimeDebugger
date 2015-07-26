@@ -1,5 +1,5 @@
 #tag Class
-Protected Class DocumentSymbol
+ Attributes ( InternalItem = True ) Class DocumentSymbol
 	#tag Method, Flags = &h0
 		Sub Constructor(name as string, offset as integer, type as string)
 		  self.Name = name

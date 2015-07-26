@@ -1,5 +1,5 @@
 #tag Class
-Protected Class CharSelection
+ Attributes ( InternalItem = True ) Class CharSelection
 Inherits DataRange
 	#tag Method, Flags = &h0
 		Sub Constructor(offset as integer, length as integer, startLine as integer, endLine as integer, selectionColor as color)

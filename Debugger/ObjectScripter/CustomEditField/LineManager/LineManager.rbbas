@@ -1,5 +1,5 @@
 #tag Class
-Class LineManager
+ Attributes ( InternalItem = True ) Class LineManager
 	#tag Method, Flags = &h1
 		Protected Sub appendLine(segment as textline)
 		  //append a line to the line array

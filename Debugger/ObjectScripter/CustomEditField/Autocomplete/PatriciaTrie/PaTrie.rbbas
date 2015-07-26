@@ -1,5 +1,5 @@
 #tag Class
-Protected Class PaTrie
+ Attributes ( InternalItem = True ) Class PaTrie
 	#tag Method, Flags = &h0
 		Function addKey(key as string, data as variant = nil) As PatrieNode
 		  if key = "" then Return nil

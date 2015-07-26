@@ -1,5 +1,5 @@
 #tag Interface
-Protected Interface UndoableAction
+ Attributes ( InternalItem = True ) Interface UndoableAction
 	#tag Method, Flags = &h0
 		Function EventID() As integer
 		  

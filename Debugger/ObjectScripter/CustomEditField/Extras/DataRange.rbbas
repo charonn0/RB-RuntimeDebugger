@@ -1,5 +1,5 @@
 #tag Class
-Protected Class DataRange
+ Attributes ( InternalItem = True ) Class DataRange
 	#tag Method, Flags = &h0
 		Sub Constructor()
 		  Constructor(0,0)

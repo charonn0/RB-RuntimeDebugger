@@ -1,5 +1,5 @@
 #tag Module
-Protected Module MessageCenter
+ Attributes ( InternalItem = True ) Module MessageCenter
 	#tag Method, Flags = &h1
 		Protected Function isMessageInQueue(type as variant, matchInfoKey as Variant, matchInfoValue as Variant) As Boolean
 		  if queue <> nil then

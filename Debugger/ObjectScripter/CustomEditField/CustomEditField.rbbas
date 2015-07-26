@@ -1,5 +1,5 @@
 #tag Class
-Protected Class CustomEditField
+ Attributes ( InternalItem = True ) Class CustomEditField
 Inherits Canvas
 Implements MessageReceiver
 	#tag Event

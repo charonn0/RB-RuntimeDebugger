@@ -1,5 +1,5 @@
 #tag Class
-Protected Class MemoryBlockStorageWide
+ Attributes ( InternalItem = True ) Class MemoryBlockStorageWide
 Implements IBufferStorage
 	#tag Method, Flags = &h0
 		Function ByteAt(offset as Integer) As Integer

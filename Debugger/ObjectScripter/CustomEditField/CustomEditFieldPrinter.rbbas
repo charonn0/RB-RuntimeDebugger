@@ -1,5 +1,5 @@
 #tag Class
-Protected Class CustomEditFieldPrinter
+ Attributes ( InternalItem = True ) Class CustomEditFieldPrinter
 	#tag Method, Flags = &h0
 		Sub Constructor(g as graphics, textStorage as gapBuffer, lines as linemanager, defaultColor as color, displayInvisible as boolean, indentVisually as Boolean)
 		  self.g = g

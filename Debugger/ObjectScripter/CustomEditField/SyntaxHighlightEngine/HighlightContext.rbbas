@@ -1,5 +1,5 @@
 #tag Class
-Protected Class HighlightContext
+ Attributes ( InternalItem = True ) Class HighlightContext
 	#tag Method, Flags = &h21
 		Private Sub addKeyword(keyword as string)
 		  if keyword="" then Return

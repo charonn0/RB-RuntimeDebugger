@@ -1,5 +1,5 @@
 #tag Class
-Protected Class UndoManager
+ Attributes ( InternalItem = True ) Class UndoManager
 	#tag Method, Flags = &h1
 		Protected Sub addActionToRedoStack(action as UndoableAction)
 		  RedoStack.Append action

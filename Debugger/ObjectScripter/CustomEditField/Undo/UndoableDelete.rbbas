@@ -1,5 +1,5 @@
 #tag Class
-Protected Class UndoableDelete
+ Attributes ( InternalItem = True ) Class UndoableDelete
 Implements UndoableAction
 	#tag Method, Flags = &h0
 		Sub Constructor(field as CustomEditField, offset as integer, length as integer, text as string, attrs() as TextLineAttributes, oldCaretPos as integer, ID as integer)

@@ -1,5 +1,5 @@
 #tag Class
-Protected Class MessageQueue
+ Attributes ( InternalItem = True ) Class MessageQueue
 Inherits Timer
 	#tag Event
 		Sub Action()

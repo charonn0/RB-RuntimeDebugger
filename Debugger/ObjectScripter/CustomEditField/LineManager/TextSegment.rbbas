@@ -1,5 +1,5 @@
 #tag Class
-Protected Class TextSegment
+ Attributes ( InternalItem = True ) Class TextSegment
 Inherits DataRange
 	#tag Method, Flags = &h0
 		Function Clone() As textsegment

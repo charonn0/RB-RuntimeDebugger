@@ -1,5 +1,5 @@
 #tag Class
-Protected Class TextPlaceholder
+ Attributes ( InternalItem = True ) Class TextPlaceholder
 Inherits TextSegment
 	#tag Method, Flags = &h0
 		Function Clone() As textsegment

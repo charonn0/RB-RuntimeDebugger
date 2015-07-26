@@ -1,5 +1,5 @@
 #tag Class
-Protected Class HighlightDefinition
+ Attributes ( InternalItem = True ) Class HighlightDefinition
 	#tag Method, Flags = &h21
 		Private Sub addContext(context as HighlightContext)
 		  if Context=nil then Return

@@ -1,5 +1,5 @@
 #tag Class
-Protected Class ModifiedLineRangeManager
+ Attributes ( InternalItem = True ) Class ModifiedLineRangeManager
 	#tag Method, Flags = &h0
 		Sub AddRange(newStart as Integer, newLength as Integer)
 		  if newLength = 0 then

@@ -1,5 +1,5 @@
 #tag Class
-Protected Class UndoableReplace
+ Attributes ( InternalItem = True ) Class UndoableReplace
 Implements UndoableAction
 	#tag Method, Flags = &h0
 		Sub Constructor(field as customEditField, offset as integer, length as Integer, originalText as string, text as string, attrs() as TextLineAttributes, oldCaretPos as integer, ID as integer)

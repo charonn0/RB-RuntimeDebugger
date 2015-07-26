@@ -1,5 +1,5 @@
 #tag Class
-Class GapBuffer
+ Attributes ( InternalItem = True ) Class GapBuffer
 	#tag Method, Flags = &h1
 		Protected Sub checkBounds(index as integer)
 		  //checks if index is within bounds...

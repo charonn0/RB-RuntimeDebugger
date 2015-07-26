@@ -1,5 +1,5 @@
 #tag Window
-Begin Window SuggestionWindow
+Begin Window SuggestionWindow Attributes ( InternalItem = True ) 
    BackColor       =   16777215
    Backdrop        =   ""
    CloseButton     =   False
@@ -24,70 +24,6 @@ Begin Window SuggestionWindow
    Title           =   ""
    Visible         =   True
    Width           =   120
-   Begin ListBox optionList
-      AutoDeactivate  =   True
-      AutoHideScrollbars=   True
-      Bold            =   ""
-      ColumnCount     =   1
-      ColumnsResizable=   ""
-      ColumnWidths    =   ""
-      DataField       =   ""
-      DataSource      =   ""
-      DefaultRowHeight=   14
-      Enabled         =   True
-      EnableDrag      =   ""
-      EnableDragReorder=   ""
-      GridLinesHorizontal=   0
-      GridLinesVertical=   0
-      HasHeading      =   ""
-      HeadingIndex    =   -1
-      Height          =   300
-      HelpTag         =   ""
-      Hierarchical    =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      InitialValue    =   ""
-      Italic          =   ""
-      Left            =   0
-      LockBottom      =   True
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      RequiresSelection=   ""
-      Scope           =   0
-      ScrollbarHorizontal=   ""
-      ScrollBarVertical=   True
-      SelectionType   =   0
-      TabIndex        =   0
-      TabPanelIndex   =   0
-      TabStop         =   True
-      TextFont        =   "SmallSystem"
-      TextSize        =   0
-      Top             =   0
-      Underline       =   ""
-      UseFocusRing    =   False
-      Visible         =   True
-      Width           =   120
-      _ScrollOffset   =   0
-      _ScrollWidth    =   -1
-   End
-   Begin Timer Timer1
-      Enabled         =   True
-      Height          =   32
-      Index           =   -2147483648
-      Left            =   0
-      LockedInPosition=   False
-      Mode            =   0
-      Period          =   10
-      Scope           =   0
-      TabIndex        =   1
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Top             =   305
-      Visible         =   True
-      Width           =   32
-   End
 End
 #tag EndWindow
 
@@ -257,64 +193,3 @@ End
 
 #tag EndWindowCode
 
-#tag Events optionList
-	#tag Event
-		Function CellClick(row as Integer, column as Integer, x as Integer, y as Integer) As Boolean
-		  #pragma unused x
-		  #pragma unused y
-		  
-		  submit(me.cell(row,column))
-		End Function
-	#tag EndEvent
-	#tag Event
-		Function KeyDown(Key As String) As Boolean
-		  'MsgBox str(asc(key))
-		  select case asc(key)
-		  case 27, 8, 127
-		    cancel(true)
-		    
-		  case 9, 13, 3, 32
-		    submit
-		    
-		  case 28, 29, 30, 31
-		    Return False
-		    
-		  else
-		    dim options as AutocompleteOptions
-		    
-		    dim msg as new Message(self, self)
-		    Msg.addInfo(1, KeyDownMsg)
-		    msg.addInfo(2, key)
-		    MessageCenter.sendMessage(Msg)
-		    
-		    //KeyDownMsg
-		    msg = new Message(self, self)
-		    msg.addInfo(1, CurrentAutocompleteOptionsMsg)
-		    MessageCenter.sendMessage(msg)
-		    //msg should have the options now
-		    options = msg.Info(3)
-		    
-		    if options = nil then
-		      cancel(true)
-		      Return true
-		    end if
-		    
-		    loadSuggestions(options.Options)
-		    if optionList.ListCount = 0 then cancel(true)
-		  end select
-		  Return true
-		End Function
-	#tag EndEvent
-	#tag Event
-		Sub LostFocus()
-		  cancel(False)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Timer1
-	#tag Event
-		Sub Action()
-		  self.Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents

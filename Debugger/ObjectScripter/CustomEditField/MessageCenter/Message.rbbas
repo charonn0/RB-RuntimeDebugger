@@ -1,5 +1,5 @@
 #tag Class
-Protected Class Message
+ Attributes ( InternalItem = True ) Class Message
 Inherits Dictionary
 	#tag Method, Flags = &h0
 		Sub AddInfo(key as variant, info as variant)

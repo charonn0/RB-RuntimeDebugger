@@ -1,5 +1,5 @@
 #tag Class
-Protected Class CharSelectionManager
+ Attributes ( InternalItem = True ) Class CharSelectionManager
 	#tag Method, Flags = &h0
 		Function AddSelection(selection as CharSelection) As charSelection
 		  if Selection.length = 0 then Return nil

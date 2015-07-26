@@ -1,5 +1,5 @@
 #tag Interface
-Protected Interface MessageReceiver
+ Attributes ( InternalItem = True ) Interface MessageReceiver
 	#tag Method, Flags = &h0
 		Sub receiveMessage(theMessage as Message)
 		  

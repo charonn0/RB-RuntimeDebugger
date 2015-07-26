@@ -1,5 +1,5 @@
 #tag Class
-Protected Class PaTrieNode
+ Attributes ( InternalItem = True ) Class PaTrieNode
 	#tag Method, Flags = &h0
 		Function addKey(key as string, data as variant = nil) As PaTrieNode
 		  #pragma DisableBackgroundTasks

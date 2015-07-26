@@ -1,5 +1,5 @@
 #tag Window
-Begin Window ScriptEdit
+Begin Window ScriptEdit Attributes ( InternalItem = True ) 
    BackColor       =   16777215
    Backdrop        =   ""
    CloseButton     =   True
@@ -24,7 +24,7 @@ Begin Window ScriptEdit
    Title           =   "Script Editor"
    Visible         =   True
    Width           =   551
-   Begin Pushbutton CheckButton
+   Begin Pushbutton CheckButton Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   False
       ButtonStyle     =   0
@@ -55,7 +55,7 @@ Begin Window ScriptEdit
       Visible         =   True
       Width           =   115
    End
-   Begin Label ScriptStatus
+   Begin Label ScriptStatus Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   ""
       DataField       =   ""
@@ -89,7 +89,7 @@ Begin Window ScriptEdit
       Visible         =   True
       Width           =   290
    End
-   Begin RbScript Script
+   Begin RbScript Script Attributes ( InternalItem = True ) 
       EncodingFont    =   ""
       Height          =   32
       Index           =   -2147483648
@@ -102,7 +102,7 @@ Begin Window ScriptEdit
       Top             =   40
       Width           =   32
    End
-   Begin TabPanel TabPanel1
+   Begin TabPanel TabPanel1 Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   ""
       Enabled         =   True
@@ -132,7 +132,7 @@ Begin Window ScriptEdit
       Value           =   0
       Visible         =   True
       Width           =   548
-      Begin CustomEditField ScriptSource
+      Begin CustomEditField ScriptSource Attributes ( InternalItem = True ) 
          AcceptFocus     =   ""
          AcceptTabs      =   ""
          AutoCloseBrackets=   False
@@ -200,7 +200,7 @@ Begin Window ScriptEdit
          Visible         =   True
          Width           =   513
       End
-      Begin Label ErrorStatus
+      Begin Label ErrorStatus Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -234,7 +234,7 @@ Begin Window ScriptEdit
          Visible         =   True
          Width           =   527
       End
-      Begin Listbox ErrorList
+      Begin Listbox ErrorList Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          AutoHideScrollbars=   True
          Bold            =   ""
@@ -283,7 +283,7 @@ Begin Window ScriptEdit
          Width           =   533
          _ScrollWidth    =   -1
       End
-      Begin ScrollBar PaintScrollUpDown
+      Begin ScrollBar PaintScrollUpDown Attributes ( InternalItem = True ) 
          AcceptFocus     =   true
          AutoDeactivate  =   True
          Enabled         =   True
@@ -311,7 +311,7 @@ Begin Window ScriptEdit
          Visible         =   True
          Width           =   16
       End
-      Begin ScrollBar PaintScrollLeftRight
+      Begin ScrollBar PaintScrollLeftRight Attributes ( InternalItem = True ) 
          AcceptFocus     =   true
          AutoDeactivate  =   True
          Enabled         =   True
@@ -340,7 +340,7 @@ Begin Window ScriptEdit
          Width           =   513
       End
    End
-   Begin Pushbutton RunButton
+   Begin Pushbutton RunButton Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   False
       ButtonStyle     =   0

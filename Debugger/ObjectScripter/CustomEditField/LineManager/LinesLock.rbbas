@@ -1,5 +1,5 @@
 #tag Class
-Protected Class LinesLock
+ Attributes ( InternalItem = True ) Class LinesLock
 	#tag Method, Flags = &h0
 		Sub Constructor(cef as CustomEditField)
 		  // acquire a lock on the LineManager

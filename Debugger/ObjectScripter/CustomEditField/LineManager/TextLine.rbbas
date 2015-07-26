@@ -1,5 +1,5 @@
 #tag Class
-Class TextLine
+ Attributes ( InternalItem = True ) Class TextLine
 Inherits TextSegment
 	#tag Event
 		Sub LengthChanged()
