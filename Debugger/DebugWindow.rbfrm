@@ -533,6 +533,7 @@ End
 		  Dim s As String
 		  Dim nextitem As Introspection.TypeInfo = Item.Type.BaseType
 		  Dim items() As String
+		  Items.Append(Item.SuperClass)
 		  Do Until nextitem = Nil
 		    Items.Append(nextitem.FullName)
 		    nextitem = nextitem.BaseType
