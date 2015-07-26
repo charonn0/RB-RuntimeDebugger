@@ -1,5 +1,5 @@
 #tag Class
-Class Introspector
+ Attributes ( InternalItem = True ) Class Introspector
 Inherits Thread
 	#tag Event
 		Sub Run()

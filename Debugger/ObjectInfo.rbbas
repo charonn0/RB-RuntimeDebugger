@@ -1,5 +1,5 @@
 #tag Class
-Class ObjectInfo
+ Attributes ( InternalItem = True ) Class ObjectInfo
 	#tag Method, Flags = &h1
 		Protected Shared Sub AddReference(Obj As String)
 		  #pragma BreakOnExceptions Off

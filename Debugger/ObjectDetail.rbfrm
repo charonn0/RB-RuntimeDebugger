@@ -1,5 +1,5 @@
 #tag Window
-Begin ContainerControl ObjectDetail
+Begin ContainerControl ObjectDetail Attributes ( InternalItem = True ) 
    AcceptFocus     =   ""
    AcceptTabs      =   True
    AutoDeactivate  =   True
@@ -23,7 +23,7 @@ Begin ContainerControl ObjectDetail
    UseFocusRing    =   ""
    Visible         =   True
    Width           =   529
-   Begin GroupBox GroupBox1
+   Begin GroupBox GroupBox1 Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   ""
       Caption         =   "Object Detail"
@@ -42,6 +42,7 @@ Begin ContainerControl ObjectDetail
       Scope           =   0
       TabIndex        =   0
       TabPanelIndex   =   0
+      TabStop         =   True
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
@@ -49,7 +50,7 @@ Begin ContainerControl ObjectDetail
       Underline       =   ""
       Visible         =   True
       Width           =   507
-      Begin Label Label1
+      Begin Label Label1 Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -71,6 +72,7 @@ Begin ContainerControl ObjectDetail
          Selectable      =   False
          TabIndex        =   0
          TabPanelIndex   =   0
+         TabStop         =   True
          Text            =   "References:"
          TextAlign       =   2
          TextColor       =   0
@@ -83,7 +85,7 @@ Begin ContainerControl ObjectDetail
          Visible         =   True
          Width           =   61
       End
-      Begin Label Label2
+      Begin Label Label2 Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -105,6 +107,7 @@ Begin ContainerControl ObjectDetail
          Selectable      =   False
          TabIndex        =   1
          TabPanelIndex   =   0
+         TabStop         =   True
          Text            =   "Super Class"
          TextAlign       =   2
          TextColor       =   0
@@ -117,7 +120,7 @@ Begin ContainerControl ObjectDetail
          Visible         =   True
          Width           =   61
       End
-      Begin Label Label3
+      Begin Label Label3 Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -139,6 +142,7 @@ Begin ContainerControl ObjectDetail
          Selectable      =   False
          TabIndex        =   2
          TabPanelIndex   =   0
+         TabStop         =   True
          Text            =   "Name:"
          TextAlign       =   2
          TextColor       =   0
@@ -151,7 +155,7 @@ Begin ContainerControl ObjectDetail
          Visible         =   True
          Width           =   46
       End
-      Begin ListBox AttribList
+      Begin ListBox AttribList Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          AutoHideScrollbars=   True
          Bold            =   ""
@@ -200,7 +204,7 @@ Begin ContainerControl ObjectDetail
          Width           =   486
          _ScrollWidth    =   -1
       End
-      Begin Label ItemRefCount
+      Begin Label ItemRefCount Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -222,6 +226,7 @@ Begin ContainerControl ObjectDetail
          Selectable      =   False
          TabIndex        =   4
          TabPanelIndex   =   0
+         TabStop         =   True
          Text            =   "No Name Available"
          TextAlign       =   0
          TextColor       =   0
@@ -234,7 +239,7 @@ Begin ContainerControl ObjectDetail
          Visible         =   True
          Width           =   418
       End
-      Begin Label ItemClass
+      Begin Label ItemClass Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -256,6 +261,7 @@ Begin ContainerControl ObjectDetail
          Selectable      =   False
          TabIndex        =   5
          TabPanelIndex   =   0
+         TabStop         =   True
          Text            =   "No Name Available"
          TextAlign       =   0
          TextColor       =   0
@@ -268,7 +274,7 @@ Begin ContainerControl ObjectDetail
          Visible         =   True
          Width           =   418
       End
-      Begin Label ItemName
+      Begin Label ItemName Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -290,6 +296,7 @@ Begin ContainerControl ObjectDetail
          Selectable      =   False
          TabIndex        =   6
          TabPanelIndex   =   0
+         TabStop         =   True
          Text            =   "No Name Available"
          TextAlign       =   0
          TextColor       =   0
@@ -302,7 +309,7 @@ Begin ContainerControl ObjectDetail
          Visible         =   True
          Width           =   418
       End
-      Begin ItemInfo ItemInfo1
+      Begin ItemInfo ItemInfo1 Attributes ( InternalItem = True ) 
          AcceptFocus     =   ""
          AcceptTabs      =   True
          AutoDeactivate  =   True
@@ -313,6 +320,7 @@ Begin ContainerControl ObjectDetail
          HasBackColor    =   False
          Height          =   51
          HelpTag         =   ""
+         Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Left            =   20
          LockBottom      =   True

@@ -1,5 +1,5 @@
 #tag Window
-Begin Window PicContents
+Begin Window PicContents Attributes ( InternalItem = True ) 
    BackColor       =   16777215
    Backdrop        =   ""
    CloseButton     =   True
@@ -24,7 +24,7 @@ Begin Window PicContents
    Title           =   "Contents"
    Visible         =   True
    Width           =   297
-   Begin Canvas Canvas1
+   Begin Canvas Canvas1 Attributes ( InternalItem = True ) 
       AcceptFocus     =   ""
       AcceptTabs      =   ""
       AutoDeactivate  =   True

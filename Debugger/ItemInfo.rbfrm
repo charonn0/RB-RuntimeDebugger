@@ -1,5 +1,5 @@
 #tag Window
-Begin ContainerControl ItemInfo
+Begin ContainerControl ItemInfo Attributes ( InternalItem = True ) 
    AcceptFocus     =   ""
    AcceptTabs      =   True
    AutoDeactivate  =   True
@@ -23,7 +23,7 @@ Begin ContainerControl ItemInfo
    UseFocusRing    =   ""
    Visible         =   True
    Width           =   562
-   Begin ListBox PropertyList
+   Begin ListBox PropertyList Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       AutoHideScrollbars=   True
       Bold            =   ""
@@ -72,7 +72,7 @@ Begin ContainerControl ItemInfo
       Width           =   228
       _ScrollWidth    =   -1
    End
-   Begin ListBox MethodList
+   Begin ListBox MethodList Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       AutoHideScrollbars=   True
       Bold            =   ""
@@ -121,7 +121,7 @@ Begin ContainerControl ItemInfo
       Width           =   327
       _ScrollWidth    =   -1
    End
-   Begin Canvas Canvas1
+   Begin Canvas Canvas1 Attributes ( InternalItem = True ) 
       AcceptFocus     =   ""
       AcceptTabs      =   ""
       AutoDeactivate  =   True

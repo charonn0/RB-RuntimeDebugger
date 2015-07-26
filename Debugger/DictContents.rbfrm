@@ -1,5 +1,5 @@
 #tag Window
-Begin Window DictContents
+Begin Window DictContents Attributes ( InternalItem = True ) 
    BackColor       =   16777215
    Backdrop        =   ""
    CloseButton     =   True
@@ -24,7 +24,7 @@ Begin Window DictContents
    Title           =   "Contents"
    Visible         =   True
    Width           =   297
-   Begin ListBox Contents
+   Begin ListBox Contents Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       AutoHideScrollbars=   True
       Bold            =   ""

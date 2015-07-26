@@ -1,5 +1,5 @@
 #tag Window
-Begin Window DebugWindow
+Begin Window DebugWindow Attributes ( InternalItem = True ) 
    BackColor       =   16777215
    Backdrop        =   ""
    CloseButton     =   True
@@ -24,7 +24,7 @@ Begin Window DebugWindow
    Title           =   "Debugger"
    Visible         =   True
    Width           =   817
-   Begin Listbox RuntimeList
+   Begin Listbox RuntimeList Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       AutoHideScrollbars=   True
       Bold            =   ""
@@ -73,7 +73,7 @@ Begin Window DebugWindow
       Width           =   219
       _ScrollWidth    =   -1
    End
-   Begin Introspector Thread1
+   Begin Introspector Thread1 Attributes ( InternalItem = True ) 
       Height          =   32
       Index           =   -2147483648
       Left            =   855
@@ -85,7 +85,7 @@ Begin Window DebugWindow
       Top             =   0
       Width           =   32
    End
-   Begin Timer Timer1
+   Begin Timer Timer1 Attributes ( InternalItem = True ) 
       Height          =   32
       Index           =   -2147483648
       Left            =   888
@@ -97,7 +97,7 @@ Begin Window DebugWindow
       Top             =   69
       Width           =   32
    End
-   Begin Timer Timer2
+   Begin Timer Timer2 Attributes ( InternalItem = True ) 
       Height          =   32
       Index           =   -2147483648
       Left            =   855
@@ -109,7 +109,7 @@ Begin Window DebugWindow
       Top             =   69
       Width           =   32
    End
-   Begin CheckBox CheckBox1
+   Begin CheckBox CheckBox1 Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   ""
       Caption         =   "Hide debugger objects"
@@ -141,7 +141,7 @@ Begin Window DebugWindow
       Visible         =   True
       Width           =   219
    End
-   Begin GroupBox GroupBox1
+   Begin GroupBox GroupBox1 Attributes ( InternalItem = True ) 
       AutoDeactivate  =   True
       Bold            =   ""
       Caption         =   "Object Detail"
@@ -167,7 +167,7 @@ Begin Window DebugWindow
       Underline       =   ""
       Visible         =   True
       Width           =   574
-      Begin Label Label6
+      Begin Label Label6 Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -201,7 +201,7 @@ Begin Window DebugWindow
          Visible         =   True
          Width           =   61
       End
-      Begin Label Label3
+      Begin Label Label3 Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -235,7 +235,7 @@ Begin Window DebugWindow
          Visible         =   True
          Width           =   61
       End
-      Begin Label Label1
+      Begin Label Label1 Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -269,7 +269,7 @@ Begin Window DebugWindow
          Visible         =   True
          Width           =   46
       End
-      Begin Listbox AttribList
+      Begin Listbox AttribList Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          AutoHideScrollbars=   True
          Bold            =   ""
@@ -318,7 +318,7 @@ Begin Window DebugWindow
          Width           =   553
          _ScrollWidth    =   -1
       End
-      Begin Label ItemRefCount
+      Begin Label ItemRefCount Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -352,7 +352,7 @@ Begin Window DebugWindow
          Visible         =   True
          Width           =   367
       End
-      Begin Label ItemClass
+      Begin Label ItemClass Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -386,7 +386,7 @@ Begin Window DebugWindow
          Visible         =   True
          Width           =   485
       End
-      Begin Label ItemName
+      Begin Label ItemName Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          DataField       =   ""
@@ -420,7 +420,7 @@ Begin Window DebugWindow
          Visible         =   True
          Width           =   485
       End
-      Begin PushButton ScriptRun
+      Begin PushButton ScriptRun Attributes ( InternalItem = True ) 
          AutoDeactivate  =   True
          Bold            =   ""
          ButtonStyle     =   0
@@ -452,7 +452,7 @@ Begin Window DebugWindow
          Width           =   106
       End
    End
-   Begin ItemInfo ItemInfo1
+   Begin ItemInfo ItemInfo1 Attributes ( InternalItem = True ) 
       AcceptFocus     =   ""
       AcceptTabs      =   True
       AutoDeactivate  =   True
