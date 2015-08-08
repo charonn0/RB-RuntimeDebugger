@@ -5,3 +5,5 @@ Highly experimental. To use, import the "Debugger" folder into your REALbasic/Xo
 ```vbnet
 DebugWindow.Show
 ```
+
+![](http://i.imgur.com/XOlnzL1.png)
